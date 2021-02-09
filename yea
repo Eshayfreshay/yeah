@@ -167,7 +167,7 @@ function LibMain:AddWindow()
 	Title.Size = UDim2.new(0, 67, 0, 50)
 	Title.Font = Enum.Font.SourceSans
 	Title.Text = "Eshay Hub"
-	Title.TextColor3 = Color3.fromRGB(255,255,255)
+	Title.TextColor3 = Color3.fromHSV(i / 255, 1, 1)
 	Title.TextSize = 29.000
 	Title.TextXAlignment = Enum.TextXAlignment.Left
 
