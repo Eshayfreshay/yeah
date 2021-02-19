@@ -1,4 +1,5 @@
 game:GetService("StarterGui").ResetPlayerGuiOnSpawn = false
+
 local LibMain = {RainbowColorValue = 0, HueSelectionPosition = 0}
 local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
@@ -103,7 +104,7 @@ end
 
 local Library = Instance.new("ScreenGui")
 Library.Name = "Library"
-Library.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Library.Parent = game.CoreGui
 Library.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 function LibMain:AddWindow()
@@ -171,6 +172,13 @@ function LibMain:AddWindow()
 	Title.TextColor3 = Color3.fromRGB(255,255,255)
 	Title.TextSize = 29.000
 	Title.TextXAlignment = Enum.TextXAlignment.Left
+
+while true do
+	for i = 0,1,0.001*1 do
+		Title.TextColor3 = Color3.fromHSV(i,0.65,1)
+		wait()
+	end
+end
 
 	TabsText.Name = "TabsText"
 	TabsText.Parent = LeftFrame
@@ -776,10 +784,10 @@ function LibMain:AddWindow()
 				for i, v in next, list do
 					ItemCount = ItemCount + 1
 
-					if ItemCount <= 4 then
+					if ItemCount <= 5 then
 						FrameSize = FrameSize + 26
-					elseif ItemCount >= 5 then
-						FrameSize = 130
+					elseif ItemCount >= 6 then
+						FrameSize = 156
 					end
 
 					local Item = Instance.new("TextButton")
