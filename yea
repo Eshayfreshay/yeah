@@ -172,18 +172,11 @@ function LibMain:AddWindow()
 	Title.TextColor3 = Color3.fromRGB(255,255,255)
 	Title.TextSize = 29.000
 	Title.TextXAlignment = Enum.TextXAlignment.Left
-
-
-				coroutine.wrap(
-					function()
-						while wait() do
-	for i = 0,1,0.001*1 do
-		Title.TextColor3 = Color3.fromHSV(i,0.65,1)
-		wait()
+spawn(function()
+	while wait() do
+		Title.TextColor3 = Color3.fromHSV(tick() % 1 / 1, 0.65, 1)
 	end
-						end
-					end
-				)()
+end)
 
 	TabsText.Name = "TabsText"
 	TabsText.Parent = LeftFrame
