@@ -776,10 +776,10 @@ function LibMain:AddWindow()
 				for i, v in next, list do
 					ItemCount = ItemCount + 1
 
-					if ItemCount <= 2 then
+					if ItemCount <= 4 then
 						FrameSize = FrameSize + 26
-					elseif ItemCount >= 3 then
-						FrameSize = 78
+					elseif ItemCount >= 5 then
+						FrameSize = 130
 					end
 
 					local Item = Instance.new("TextButton")
