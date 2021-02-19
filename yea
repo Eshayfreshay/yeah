@@ -405,6 +405,8 @@ end)
 				local ToggleFrameWhiteCorner = Instance.new("UICorner")
 				local ToggleCircle = Instance.new("Frame")
 				local ToggleCircleCorner = Instance.new("UICorner")
+				local ToggleCircle1 = Instance.new("Frame")
+				local ToggleCircle1Corner = Instance.new("UICorner")
 
 				Toggle.Name = "Toggle"
 				Toggle.Parent = SectionItemHolder
@@ -466,14 +468,39 @@ end)
 				ToggleCircleCorner.Name = "ToggleCircleCorner"
 				ToggleCircleCorner.Parent = ToggleCircle
 
+
+
+					ToggleCircle1.Name = "Toggle1Circle"
+					ToggleCircle1.Parent = ToggleFrame
+					ToggleCircle1.AnchorPoint = Vector2.new(0.5, 0.5)
+					ToggleCircle1.BackgroundColor3 = Color3.fromRGB(235, 234, 235)
+					ToggleCircle1.LayoutOrder = 1
+					ToggleCircle1.Position = UDim2.new(0.197999999, 0, 0.609000027, -2)
+					ToggleCircle1.Size = UDim2.new(0, 17, 0, 17)
+
+					ToggleCircle1Corner.CornerRadius = UDim.new(1, 0)
+					ToggleCircle1Corner.Name = "ToggleCircle1Corner"
+					ToggleCircle1Corner.Parent = Toggle1Circle
+
+spawn(function()
+	while wait() do
+ToggleCircle1.BackgroundColor3 = Color3.fromHSV(tick() % 4 / 4, 0.65, 1)
+	end
+end)
+
 				Toggle.MouseButton1Click:Connect(
 					function()
 						if Toggled == false then
 							TweenService:Create(
-								ToggleCircle,
-								TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-								{BackgroundColor3 = Color3.fromRGB(101, 97, 214)}
-							):Play()
+									ToggleCircle1,
+									TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+									{BackgroundTransparency = 0}
+								):Play()
+								TweenService:Create(
+									ToggleCircle,
+									TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+									{BackgroundTransparency = 1}
+								):Play()
 							TweenService:Create(
 								ToggleTitle,
 								TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
@@ -498,10 +525,15 @@ end)
 							)
 						else
 							TweenService:Create(
-								ToggleCircle,
-								TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-								{BackgroundColor3 = Color3.fromRGB(235, 234, 235)}
-							):Play()
+									ToggleCircle1,
+									TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+									{BackgroundTransparency = 1}
+								):Play()
+								TweenService:Create(
+									ToggleCircle,
+									TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+									{BackgroundTransparency = 0}
+								):Play()
 							TweenService:Create(
 								ToggleTitle,
 								TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
@@ -599,6 +631,13 @@ end)
 				Value.TextColor3 = Color3.fromRGB(255,255,255)
 				Value.TextSize = 16.000
 				Value.TextXAlignment = Enum.TextXAlignment.Right
+
+spawn(function()
+	while wait() do
+SlideCircle.ImageColor3 = Color3.fromHSV(tick() % 4 / 4, 0.65, 1)
+CurrentValueFrame.BackgroundColor3 = Color3.fromHSV(tick() % 4 / 4, 0.5, 1)
+	end
+end)
 
 				local function move(input)
 					local pos =
@@ -1387,6 +1426,9 @@ end)
 					local ToggleFrameWhiteCorner = Instance.new("UICorner")
 					local ToggleCircle = Instance.new("Frame")
 					local ToggleCircleCorner = Instance.new("UICorner")
+					local ToggleCircle1 = Instance.new("Frame")
+					local ToggleCircle1Corner = Instance.new("UICorner")
+
 
 					Toggle.Name = "Toggle"
 					Toggle.Parent = FolderHolder
@@ -1448,13 +1490,38 @@ end)
 					ToggleCircleCorner.Name = "ToggleCircleCorner"
 					ToggleCircleCorner.Parent = ToggleCircle
 
+					ToggleCircle1.Name = "Toggle1Circle"
+					ToggleCircle1.Parent = ToggleFrame
+					ToggleCircle1.AnchorPoint = Vector2.new(0.5, 0.5)
+					ToggleCircle1.BackgroundColor3 = Color3.fromRGB(235, 234, 235)
+					ToggleCircle1.LayoutOrder = 1
+					ToggleCircle1.Position = UDim2.new(0.197999999, 0, 0.609000027, -2)
+					ToggleCircle1.Size = UDim2.new(0, 17, 0, 17)
+
+					ToggleCircle1Corner.CornerRadius = UDim.new(1, 0)
+					ToggleCircle1Corner.Name = "ToggleCircle1Corner"
+					ToggleCircle1Corner.Parent = Toggle1Circle
+
+spawn(function()
+	while wait() do
+ToggleCircle1.BackgroundColor3 = Color3.fromHSV(tick() % 4 / 4, 0.65, 1)
+	end
+end)
+
+
+
 					Toggle.MouseButton1Click:Connect(
 						function()
 							if Toggled == false then
 								TweenService:Create(
+									ToggleCircle1,
+									TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+									{BackgroundTransparency = 0}
+								):Play()
+								TweenService:Create(
 									ToggleCircle,
 									TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-									{BackgroundColor3 = Color3.fromRGB(101, 97, 214)}
+									{BackgroundTransparency = 1}
 								):Play()
 								TweenService:Create(
 									ToggleTitle,
@@ -1480,9 +1547,14 @@ end)
 								)
 							else
 								TweenService:Create(
+									ToggleCircle1,
+									TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+									{BackgroundTransparency = 1}
+								):Play()
+								TweenService:Create(
 									ToggleCircle,
 									TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-									{BackgroundColor3 = Color3.fromRGB(235, 234, 235)}
+									{BackgroundTransparency = 0}
 								):Play()
 								TweenService:Create(
 									ToggleTitle,
@@ -1580,6 +1652,14 @@ end)
 					Value.TextColor3 = Color3.fromRGB(255,255,255)
 					Value.TextSize = 16.000
 					Value.TextXAlignment = Enum.TextXAlignment.Right
+
+spawn(function()
+	while wait() do
+SlideCircle.ImageColor3 = Color3.fromHSV(tick() % 4 / 4, 0.65, 1)
+CurrentValueFrame.BackgroundColor3 = Color3.fromHSV(tick() % 4 / 4, 0.5, 1)
+	end
+end)
+
 
 					local function move(input)
 						local pos =
