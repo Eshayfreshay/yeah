@@ -174,7 +174,7 @@ function LibMain:AddWindow()
 	Title.TextXAlignment = Enum.TextXAlignment.Left
 spawn(function()
 	while wait() do
-		Title.TextColor3 = Color3.fromHSV(tick() % 1 / 1, 0.65, 1)
+		Title.TextColor3 = Color3.fromHSV(tick() % 4 / 4, 0.65, 1)
 	end
 end)
 
