@@ -120,7 +120,7 @@ function LibMain:AddWindow()
 	local TabFolder = Instance.new("Folder")
 	local DragFrame = Instance.new("Frame")
 	local CurrentTabText = Instance.new("TextLabel")
-  
+
 
 	CurrentTabText.Name = "CurrentTabText"
 	CurrentTabText.Parent = Window
@@ -166,7 +166,7 @@ function LibMain:AddWindow()
 	Title.Parent = LeftFrame
 	Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	Title.BackgroundTransparency = 1.000
-	Title.Position = UDim2.new(0.0810999995, 0, 0.0069999984, 0)
+	Title.Position = UDim2.new(0.085999998, 0, 0.0069999984, 0)
 	Title.Size = UDim2.new(0, 67, 0, 50)
 	Title.Font = Enum.Font.SourceSans
 	Title.Text = "Eshay Hub"
