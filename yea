@@ -175,6 +175,13 @@ function LibMain:AddWindow()
 	Title.TextXAlignment = Enum.TextXAlignment.Left
 
 
+spawn(function()
+	while wait() do
+		Title.TextColor3 = Color3.fromHSV(tick() % 4 / 4, 0.65, 1)
+                TitleLine.BackgroundColor3 = Color3.fromHSV(tick() % 4 / 4, 0.65, 1)
+	end
+end)
+
 	TabsText.Name = "TabsText"
 	TabsText.Parent = LeftFrame
 	TabsText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
