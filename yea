@@ -120,6 +120,7 @@ function LibMain:AddWindow()
 	local TabFolder = Instance.new("Folder")
 	local DragFrame = Instance.new("Frame")
 	local CurrentTabText = Instance.new("TextLabel")
+  
 
 	CurrentTabText.Name = "CurrentTabText"
 	CurrentTabText.Parent = Window
@@ -173,12 +174,12 @@ function LibMain:AddWindow()
 	Title.TextSize = 29.000
 	Title.TextXAlignment = Enum.TextXAlignment.Left
 
-spawn(function()
+	spawn(function()
 	while wait() do
 		Title.TextColor3 = Color3.fromHSV(tick() % 4 / 4, 0.65, 1)
-                
+                TitleLine.BackgroundColor3 = Color3.fromHSV(tick() % 4 / 4, 0.65, 1)
 	end
-end)
+	end)
 
 	TabsText.Name = "TabsText"
 	TabsText.Parent = LeftFrame
