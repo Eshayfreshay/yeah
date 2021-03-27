@@ -120,7 +120,6 @@ function LibMain:AddWindow()
 	local TabFolder = Instance.new("Folder")
 	local DragFrame = Instance.new("Frame")
 	local CurrentTabText = Instance.new("TextLabel")
-  local TitleLine = Instance.new("Frame")
 
 	CurrentTabText.Name = "CurrentTabText"
 	CurrentTabText.Parent = Window
