@@ -120,7 +120,7 @@ function LibMain:AddWindow()
 	local TabFolder = Instance.new("Folder")
 	local DragFrame = Instance.new("Frame")
 	local CurrentTabText = Instance.new("TextLabel")
- 
+  local TitleLine = Instance.new("Frame")
 
 	CurrentTabText.Name = "CurrentTabText"
 	CurrentTabText.Parent = Window
@@ -174,6 +174,12 @@ function LibMain:AddWindow()
 	Title.TextSize = 29.000
 	Title.TextXAlignment = Enum.TextXAlignment.Left
 
+        TitleLine.Name = "TopBarLine"
+	TitleLine.Parent = Title
+	TitleLine.BackgroundColor3 = Color3.fromRGB(255, 55, 55)
+	TitleLine.BorderSizePixel = 0
+	TitleLine.Position = UDim2.new(0, 0, 0, 35)
+	TitleLine.Size = UDim2.new(1.6, 0, 0, 1)
 spawn(function()
 	while wait() do
 		Title.TextColor3 = Color3.fromHSV(tick() % 4 / 4, 0.65, 1)
