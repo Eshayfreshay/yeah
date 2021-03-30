@@ -461,7 +461,7 @@ end)
 				ToggleCircle.Name = "ToggleCircle"
 				ToggleCircle.Parent = ToggleFrame
 				ToggleCircle.AnchorPoint = Vector2.new(0.5, 0.5)
-				ToggleCircle.BackgroundColor3 = Color3.fromRGB(235, 234, 235)
+				
 				ToggleCircle.LayoutOrder = 1
 				ToggleCircle.Position = UDim2.new(0.197999999, 0, 0.609000027, -2)
 				ToggleCircle.Size = UDim2.new(0, 17, 0, 17)
