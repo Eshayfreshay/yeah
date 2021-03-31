@@ -2349,13 +2349,3 @@ end)
 	return Tabs
 end
 return LibMain
-
-local frame1 = Window -- path to the frame
-local mouse = game:GetService('Players').LocalPlayer:GetMouse(); -- we need the mouse object, which also has the keyboard
-
-mouse.KeyDown:connect(function(key) -- whenever a key is pushed down
-key = key:lower() -- i do this in all my key events, though i don't remember why
-if key == 'h' then -- if key pressed is h
-frame1.Visible = not frame1.Visible -- flip between visible/invisible
-end
-end)
