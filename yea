@@ -169,9 +169,9 @@ function LibMain:AddWindow()
 	Title.Position = UDim2.new(0.085999998, 0, 0.0069999984, 0)
 	Title.Size = UDim2.new(0, 67, 0, 50)
 	Title.Font = Enum.Font.SourceSans
-	Title.Text = "Eshay's Hub"
+	Title.Text = "Emperor Hub"
 	Title.TextColor3 = Color3.fromRGB(255,255,255)
-	Title.TextSize = 32.000
+	Title.TextSize = 29.000
 	Title.TextXAlignment = Enum.TextXAlignment.Left
 
 spawn(function()
