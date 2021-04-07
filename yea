@@ -1,5 +1,19 @@
 game:GetService("StarterGui").ResetPlayerGuiOnSpawn = false
 
+game:GetService("UserInputService").InputBegan:connect(
+    function(key, gpe)
+        if key.KeyCode == Enum.KeyCode.LeftControl then
+            pcall(
+                function()
+                    for i, v in pairs(game.CoreGui.Library:GetChildren()) do
+                        v.Visible = not v.Visible
+                    end
+                end
+            )
+        end
+    end
+)
+
 local LibMain = {RainbowColorValue = 0, HueSelectionPosition = 0}
 local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
