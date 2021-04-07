@@ -2,7 +2,7 @@ game:GetService("StarterGui").ResetPlayerGuiOnSpawn = false
 
 game:GetService("UserInputService").InputBegan:connect(
     function(key, gpe)
-        if key.KeyCode == Enum.KeyCode.308 then
+        if key.KeyCode == Enum.KeyCode.LeftAlt then
             pcall(
                 function()
                     for i, v in pairs(game.CoreGui.Library:GetChildren()) do
