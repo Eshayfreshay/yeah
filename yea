@@ -670,7 +670,7 @@ end)
 
 spawn(function()
 	while wait() do
-SlideCircle.ImageColor3 = Color3.fromHSV(tick() % 4 / 4, 0.65, 1)
+SlideCircle.ImageColor3 = Color3.fromRGB(103,103,103)
 CurrentValueFrame.BackgroundColor3 = Color3.fromHSV(tick() % 4 / 4, 0.5, 1)
 	end
 end)
