@@ -235,7 +235,7 @@ end)
 		TabTitle.Parent = TabBtn
 		TabTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		TabTitle.BackgroundTransparency = 1.000
-		TabTitle.Position = UDim2.new(0.275999993, 0, 0.0469999984, 0)
+		TabTitle.Position = UDim2.new(0.0258620698, 0, 0.0469999984, 0)
 		TabTitle.Size = UDim2.new(0, 65, 0, 30)
 		TabTitle.Font = Enum.Font.SourceSansLight
 		TabTitle.Text = text
