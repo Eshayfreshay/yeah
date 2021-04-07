@@ -126,7 +126,7 @@ function LibMain:AddWindow()
 	CurrentTabText.Parent = Window
 	CurrentTabText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	CurrentTabText.BackgroundTransparency = 1.000
-	CurrentTabText.Position = UDim2.new(0.251908392, 0, 0.0101005023, 0)
+	CurrentTabText.Position = UDim2.new(-0.000604294648, 0, 0.0101005023, 0)
 	CurrentTabText.Size = UDim2.new(0, 200, 0, 41)
 	CurrentTabText.Font = Enum.Font.SourceSans
 	CurrentTabText.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -196,7 +196,7 @@ end)
 	TabHolder.Parent = LeftFrame
 	TabHolder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	TabHolder.BackgroundTransparency = 1.000
-	TabHolder.Position = UDim2.new(-0.000104294648, 0, 0.155, 0)
+	TabHolder.Position = UDim2.new(0.051, 0, 0.155, 0)
 	TabHolder.Size = UDim2.new(0, 116, 0, 290)
 
 	TabHolderLayout.Name = "TabHolderLayout"
