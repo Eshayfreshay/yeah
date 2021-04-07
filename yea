@@ -154,7 +154,7 @@ function LibMain:AddWindow()
 
 	LeftFrame.Name = "LeftFrame"
 	LeftFrame.Parent = Window
-	LeftFrame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+	LeftFrame.BackgroundColor3 = Color3.fromRGB(32,33,37)
 	LeftFrame.Position = UDim2.new(-0.000604294648, 0, 0, 0)
 	LeftFrame.Size = UDim2.new(0, 157, 0, 398)
 
@@ -311,7 +311,7 @@ end)
 
 			Section.Name = "Section"
 			Section.Parent = Tab
-			Section.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+			Section.BackgroundColor3 = Color3.fromRGB(22,23,27))
 			Section.BorderSizePixel = 0
 			Section.Position = UDim2.new(0.253792942, 0, 0.0496056341, 0)
 			Section.Size = UDim2.new(0, 190, 0, 368)
