@@ -196,7 +196,7 @@ end)
 	TabHolder.Parent = LeftFrame
 	TabHolder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	TabHolder.BackgroundTransparency = 1.000
-	TabHolder.Position = UDim2.new(0.051, 0, 0.155, 0)
+	TabHolder.Position = UDim2.new0.0810999995, 0, 0.155, 0)
 	TabHolder.Size = UDim2.new(0, 116, 0, 290)
 
 	TabHolderLayout.Name = "TabHolderLayout"
@@ -215,7 +215,7 @@ end)
 		TabBtn.Parent = TabHolder
 		TabBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		TabBtn.BackgroundTransparency = 1.000
-		TabBtn.Position = UDim2.new(0.00595744839, 0, 0, 0)
+		TabBtn.Position = UDim2.new(0.0258620698, 0, 0, 0)
 		TabBtn.Size = UDim2.new(0, 116, 0, 35)
 		TabBtn.Font = Enum.Font.SourceSans
 		TabBtn.Text = ""
@@ -235,7 +235,7 @@ end)
 		TabTitle.Parent = TabBtn
 		TabTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		TabTitle.BackgroundTransparency = 1.000
-		TabTitle.Position = UDim2.new(0.275999993, 0, 0.0469999984, 0)
+		TabTitle.Position = UDim2.new(0.0258620698, 0, 0.0469999984, 0)
 		TabTitle.Size = UDim2.new(0, 65, 0, 30)
 		TabTitle.Font = Enum.Font.SourceSansLight
 		TabTitle.Text = text
