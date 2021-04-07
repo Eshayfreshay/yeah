@@ -447,7 +447,7 @@ end)
 				ToggleTitle.TextColor3 = Color3.fromRGB(255,255,255)
 				ToggleTitle.TextSize = 15.000
 				ToggleTitle.TextXAlignment = Enum.TextXAlignment.Left
-				ToggleTitle.TextTransparency = 0.4
+				ToggleTitle.TextTransparency = 0
 
 				ToggleFrame.Name = "ToggleFrame"
 				ToggleFrame.Parent = Toggle
