@@ -948,7 +948,7 @@ end)
 
 				Label.Name = "Button"
 				Label.Parent = SectionItemHolder
-				Label.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+				Label.BackgroundColor3 = Color3.fromRGB(32,33,37)
 				Label.BorderSizePixel = 0
 				Label.Size = UDim2.new(0, 198, 0, 26)
 				Label.AutoButtonColor = false
@@ -1410,7 +1410,7 @@ end)
 
 					Button.Name = "Button"
 					Button.Parent = FolderHolder
-					Button.BackgroundColor3 = Color3.fromRGB(64,63,64)
+					Button.BackgroundColor3 = Color3.fromRGB(32,33,37)
 					Button.BorderSizePixel = 0
 					Button.Size = UDim2.new(0, 198, 0, 26)
 					Button.AutoButtonColor = false
@@ -1540,7 +1540,7 @@ end)
 
 spawn(function()
 	while wait() do
-ToggleCircle1.BackgroundColor3 = Color3.fromHSV(tick() % 4 / 4, 0.65, 1)
+ToggleCircle1.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
 	end
 end)
 
