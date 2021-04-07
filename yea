@@ -367,7 +367,7 @@ end)
 
 				Button.Name = "Button"
 				Button.Parent = SectionItemHolder
-				Button.BackgroundColor3 = Color3.fromRGB(64, 63, 64)
+				Button.BackgroundColor3 = Color3.fromRGB(32,33,37)
 				Button.BorderSizePixel = 0
 				Button.Size = UDim2.new(0, 198, 0, 26)
 				Button.AutoButtonColor = false
@@ -396,7 +396,7 @@ end)
 						TweenService:Create(
 							Button,
 							TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-							{BackgroundColor3 = Color3.fromRGB(64, 63, 64)}
+							{BackgroundColor3 = Color3.fromRGB(32,33,37)}
 						):Play()
 					end
 				)
@@ -426,7 +426,7 @@ end)
 
 				Toggle.Name = "Toggle"
 				Toggle.Parent = SectionItemHolder
-				Toggle.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+				Toggle.BackgroundColor3 = Color3.fromRGB(32,33,37)
 				Toggle.BorderSizePixel = 0
 				Toggle.Position = UDim2.new(-0.306870222, 0, 1.23869348, 0)
 				Toggle.Size = UDim2.new(0, 198, 0, 26)
@@ -500,7 +500,7 @@ end)
 
 spawn(function()
 	while wait() do
-ToggleCircle.BackgroundColor3 = Color3.fromHSV(tick() % 4 / 4, 0.65, 1)
+ToggleCircle.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
 	end
 end)
 
@@ -670,7 +670,7 @@ end)
 
 spawn(function()
 	while wait() do
-SlideCircle.ImageColor3 = Color3.fromRGB(103,103,103)
+SlideCircle.ImageColor3 = Color3.fromRGB(103, 103, 103)
 CurrentValueFrame.BackgroundColor3 = Color3.fromHSV(tick() % 4 / 4, 0.5, 1)
 	end
 end)
