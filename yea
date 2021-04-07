@@ -526,7 +526,7 @@ end)
 							TweenService:Create(
 								ToggleTitle,
 								TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-								{TextTransparency = 0}
+								{TextTransparency = 1}
 							):Play()
 							TweenService:Create(
 								ToggleFrameWhite,
