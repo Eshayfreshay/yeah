@@ -506,7 +506,7 @@ end)
 
 spawn(function()
 	while wait() do
-ToggleCircle1.BackgroundColor3 = Color3.fromHSV(tick() % 4 / 4, 0.65, 1)
+ToggleCircle1.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
 	end
 end)
 
@@ -566,7 +566,7 @@ end)
 							TweenService:Create(
 								ToggleTitle,
 								TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-								{TextTransparency = 0.4}
+								{TextTransparency = 1}
 							):Play()
 							TweenService:Create(
 								ToggleFrameWhite,
