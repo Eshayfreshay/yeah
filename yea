@@ -500,13 +500,13 @@ end)
 
 spawn(function()
 	while wait() do
-ToggleCircle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ToggleCircle.BackgroundColor3 = Color3.fromRGB(128,0,0)
 	end
 end)
 
 spawn(function()
 	while wait() do
-ToggleCircle1.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ToggleCircle1.BackgroundColor3 = Color3.fromRGB(128,0,0)
 	end
 end)
 
