@@ -136,7 +136,7 @@ function LibMain:AddWindow()
 
 	Window.Name = "Window"
 	Window.Parent = Library
-	Window.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+	Window.BackgroundColor3 = Color3.fromRGB(22,23,27)
 	Window.Position = UDim2.new(0.329166681, 0, 0.30153504, 0)
 	Window.Size = UDim2.new(0, 655, 0, 398)
 
