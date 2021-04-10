@@ -944,11 +944,12 @@ end)
 			end
 
 			function SectionContent:AddLabel(text)
+				local labelfunc = {}
 				local Label = Instance.new("TextButton")
 
 				Label.Name = "Button"
 				Label.Parent = SectionItemHolder
-				Label.BackgroundColor3 = Color3.fromRGB(32,33,37)
+				Label.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 				Label.BorderSizePixel = 0
 				Label.Size = UDim2.new(0, 198, 0, 26)
 				Label.AutoButtonColor = false
@@ -958,8 +959,12 @@ end)
 				Label.ClipsDescendants = true
 				Label.Text = text
 				SectionItemHolder.CanvasSize = UDim2.new(0, 0, 0, SectionHolderList.AbsoluteContentSize.Y)
+                                        function labelfunc:Change(tochange)
+                                        Label.Text = tochange
+                                        end
+                                        return labelfunc
 			end
-
+			
 			function SectionContent:AddColorpicker(text, preset, callback)
 				local ColorPickerToggled = false
 				local OldToggleColor = Color3.fromRGB(0, 0, 0)
