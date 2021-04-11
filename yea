@@ -185,7 +185,7 @@ function LibMain:AddWindow()
 	Title.Font = Enum.Font.SciFi
 	Title.Text = "Emperor Hub"
 	Title.TextColor3 = Color3.fromRGB(139,0,0)
-	Title.TextSize = 28.000
+	Title.TextSize = 27.000
 	Title.TextXAlignment = Enum.TextXAlignment.Left
 
 spawn(function()
@@ -452,7 +452,7 @@ end)
 				ToggleFrame.Name = "ToggleFrame"
 				ToggleFrame.Parent = Toggle
 				ToggleFrame.AnchorPoint = Vector2.new(0.5, 0.5)
-				ToggleFrame.BackgroundColor3 = Color3.fromRGB(235, 234, 235)
+				ToggleFrame.BackgroundColor3 = Color3.fromRGB(25,25,29)
 				ToggleFrame.Position = UDim2.new(0.898024716, 0, 0.461538464, 0)
 				ToggleFrame.Size = UDim2.new(0, 33, 0, 19)
 
@@ -531,12 +531,12 @@ end)
 							TweenService:Create(
 								ToggleFrameWhite,
 								TweenInfo.new(.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-								{BackgroundColor3 = Color3.fromRGB(229, 227, 255)}
+								{BackgroundColor3 = Color3.fromRGB(25,25,29)}
 							):Play()
 							TweenService:Create(
 								ToggleFrame,
 								TweenInfo.new(.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-								{BackgroundColor3 = Color3.fromRGB(229, 227, 255)}
+								{BackgroundColor3 = Color3.fromRGB(25,25,29)}
 							):Play()
 							ToggleCircle:TweenPosition(
 								UDim2.new(0.688, 0, 0.609000027, -2),
@@ -571,12 +571,12 @@ end)
 							TweenService:Create(
 								ToggleFrameWhite,
 								TweenInfo.new(.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-								{BackgroundColor3 = Color3.fromRGB(255, 254, 255)}
+								{BackgroundColor3 = Color3.fromRGB(25,25,29)}
 							):Play()
 							TweenService:Create(
 								ToggleFrame,
 								TweenInfo.new(.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-								{BackgroundColor3 = Color3.fromRGB(235, 234, 235)}
+								{BackgroundColor3 = Color3.fromRGB(25,25,29)}
 							):Play()
 							ToggleCircle:TweenPosition(
 								UDim2.new(0.197999999, 0, 0.609000027, -2),
