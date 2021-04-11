@@ -513,10 +513,7 @@ end)
 Toggle.MouseButton1Click:Connect(
 	function()
 		if Toggled == false then
-			while wait() do
-				ToggleFrame.BackgroundColor3 = Color3.fromHSV(tick() % 4 / 4, 0.5, 1)
-			end
-end)
+			
 						
 				Toggle.MouseButton1Click:Connect(
 					function()
@@ -539,12 +536,12 @@ end)
 							TweenService:Create(
 								ToggleFrameWhite,
 								TweenInfo.new(.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-								{BackgroundColor3 = Color3.fromRGB(229, 227, 255)}
+								{BackgroundColor3 = Color3.fromRGB(25,25,29)}
 							):Play()
 							TweenService:Create(
 								ToggleFrame,
 								TweenInfo.new(.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-								{BackgroundColor3 = Color3.fromRGB(229, 227, 255)}
+								{BackgroundColor3 = Color3.fromRGB(25,25,29)}
 							):Play()
 							ToggleCircle:TweenPosition(
 								UDim2.new(0.688, 0, 0.609000027, -2),
@@ -579,12 +576,12 @@ end)
 							TweenService:Create(
 								ToggleFrameWhite,
 								TweenInfo.new(.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-								{BackgroundColor3 = Color3.fromRGB(255, 254, 255)}
+								{BackgroundColor3 = Color3.fromRGB(25,25,29)}
 							):Play()
 							TweenService:Create(
 								ToggleFrame,
 								TweenInfo.new(.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-								
+								{BackgroundColor3 = Color3.fromRGB(25,25,29)}
 							):Play()
 							ToggleCircle:TweenPosition(
 								UDim2.new(0.197999999, 0, 0.609000027, -2),
