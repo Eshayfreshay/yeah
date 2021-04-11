@@ -611,7 +611,7 @@ end)
 
 				Slider.Name = "Slider"
 				Slider.Parent = SectionItemHolder
-				Slider.BackgroundColor3 = Color3.fromRGB(32,33,37)
+				Slider.BackgroundColor3 = Color3.fromRGB(248,0,0)
 				Slider.BorderSizePixel = 0
 				Slider.Position = UDim2.new(0.422900766, 0, 1.18090463, 0)
 				Slider.Size = UDim2.new(0, 198, 0, 45)
@@ -635,7 +635,7 @@ end)
 
 				SlideFrame.Name = "SlideFrame"
 				SlideFrame.Parent = Slider
-				SlideFrame.BackgroundColor3 = Color3.fromRGB(235, 234, 235)
+				SlideFrame.BackgroundColor3 = Color3.fromRGB(25,25,29)
 				SlideFrame.BorderSizePixel = 0
 				SlideFrame.Position = UDim2.new(0.0439362712, 0, 0.646098614, 0)
 				SlideFrame.Size = UDim2.new(0, 182, 0, 3)
@@ -670,7 +670,7 @@ end)
 
 spawn(function()
 	while wait() do
-SlideCircle.ImageColor3 = Color3.fromRGB(103, 103, 103)
+SlideCircle.ImageColor3 = Color3.fromRGB(248,0,0)
 CurrentValueFrame.BackgroundColor3 = Color3.fromHSV(tick() % 4 / 4, 0.5, 1)
 	end
 end)
