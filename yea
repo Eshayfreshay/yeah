@@ -184,7 +184,7 @@ function LibMain:AddWindow()
 	Title.Size = UDim2.new(0, 67, 0, 50)
 	Title.Font = Enum.Font.SciFi
 	Title.Text = "Emperor Hub"
-	Title.TextColor3 = Color3.fromRGB(255,255,255)
+	Title.TextColor3 = Color3.fromRGB(139,0,0)
 	Title.TextSize = 27.000
 	Title.TextXAlignment = Enum.TextXAlignment.Left
 
