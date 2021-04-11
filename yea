@@ -190,7 +190,7 @@ function LibMain:AddWindow()
 
 spawn(function()
 	while wait() do
-		Title.TextColor3 = Color3.fromRGB(255,255,255)          
+		Title.TextColor3 = Color3.fromRGB(139,0,0)         
 	end
 end)
 
