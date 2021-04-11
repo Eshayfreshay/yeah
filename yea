@@ -948,7 +948,7 @@ end)
 
 				Label.Name = "Button"
 				Label.Parent = SectionItemHolder
-				Label.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+				Label.BackgroundColor3 = Color3.fromRGB(38,38,38)
 				Label.BorderSizePixel = 0
 				Label.Size = UDim2.new(0, 198, 0, 26)
 				Label.AutoButtonColor = false
