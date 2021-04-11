@@ -185,7 +185,7 @@ function LibMain:AddWindow()
 	Title.Font = Enum.Font.SciFi
 	Title.Text = "Emperor Hub"
 	Title.TextColor3 = Color3.fromRGB(255,255,255)
-	Title.TextSize = 27.000
+	Title.TextSize = 23.000
 	Title.TextXAlignment = Enum.TextXAlignment.Left
 
 spawn(function()
@@ -944,11 +944,12 @@ end)
 			end
 
 			function SectionContent:AddLabel(text)
+				local labelfunc = {}
 				local Label = Instance.new("TextButton")
 
 				Label.Name = "Button"
 				Label.Parent = SectionItemHolder
-				Label.BackgroundColor3 = Color3.fromRGB(35,35,35)
+				Label.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 				Label.BorderSizePixel = 0
 				Label.Size = UDim2.new(0, 198, 0, 26)
 				Label.AutoButtonColor = false
@@ -958,6 +959,10 @@ end)
 				Label.ClipsDescendants = true
 				Label.Text = text
 				SectionItemHolder.CanvasSize = UDim2.new(0, 0, 0, SectionHolderList.AbsoluteContentSize.Y)
+                                        function labelfunc:Change(tochange)
+                                        Label.Text = tochange
+                                        end
+                                        return labelfunc
 			end
 			
 			function SectionContent:AddColorpicker(text, preset, callback)
