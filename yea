@@ -452,7 +452,7 @@ end)
 				ToggleFrame.Name = "ToggleFrame"
 				ToggleFrame.Parent = Toggle
 				ToggleFrame.AnchorPoint = Vector2.new(0.5, 0.5)
-				ToggleFrame.BackgroundColor3 = Color3.fromRGB(235, 234, 235)
+				ToggleFrame.BackgroundColor3 = Color3.fromRGB(25,25,29)
 				ToggleFrame.Position = UDim2.new(0.898024716, 0, 0.461538464, 0)
 				ToggleFrame.Size = UDim2.new(0, 33, 0, 19)
 
@@ -463,7 +463,7 @@ end)
 				ToggleFrameWhite.Name = "ToggleFrameWhite"
 				ToggleFrameWhite.Parent = ToggleFrame
 				ToggleFrameWhite.AnchorPoint = Vector2.new(0.5, 0.5)
-				ToggleFrameWhite.BackgroundColor3 = Color3.fromRGB(255, 254, 255)
+				ToggleFrameWhite.BackgroundColor3 = Color3.fromRGB(25,25,29)
 				ToggleFrameWhite.LayoutOrder = 2
 				ToggleFrameWhite.Position = UDim2.new(0.514999986, 0, 0.609000027, -2)
 				ToggleFrameWhite.Size = UDim2.new(0, 30, 0, 16)
@@ -635,7 +635,7 @@ end)
 
 				SlideFrame.Name = "SlideFrame"
 				SlideFrame.Parent = Slider
-				SlideFrame.BackgroundColor3 = Color3.fromRGB(235, 234, 235)
+				SlideFrame.BackgroundColor3 = Color3.fromRGB(25,25,29)
 				SlideFrame.BorderSizePixel = 0
 				SlideFrame.Position = UDim2.new(0.0439362712, 0, 0.646098614, 0)
 				SlideFrame.Size = UDim2.new(0, 182, 0, 3)
