@@ -500,13 +500,13 @@ end)
 
 spawn(function()
 	while wait() do
-ToggleCircle.BackgroundColor3 = Color3.fromRGB(0,0,128)
+ToggleCircle.BackgroundColor3 = Color3.fromRGB(255,0,0)
 	end
 end)
 
 spawn(function()
 	while wait() do
-ToggleCircle1.BackgroundColor3 = Color3.fromRGB(0,0,128)
+ToggleCircle1.BackgroundColor3 = Color3.fromRGB(255,0,0)
 	end
 end)
 
@@ -670,7 +670,7 @@ end)
 
 spawn(function()
 	while wait() do
-SlideCircle.ImageColor3 = Color3.fromRGB(0,0,128)
+SlideCircle.ImageColor3 = Color3.fromRGB(255,0,0)
 CurrentValueFrame.BackgroundColor3 = Color3.fromHSV(tick() % 4 / 4, 0.5, 1)
 	end
 end)
