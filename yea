@@ -182,7 +182,7 @@ function LibMain:AddWindow()
 	Title.BackgroundTransparency = 1.000
 	Title.Position = UDim2.new(0.0680000016, 0, -0.001999984, 0)
 	Title.Size = UDim2.new(0, 67, 0, 50)
-	Title.Font = Enum.Font.SourceSans
+	Title.Font = Enum.Font.SourceSansBold
 	Title.Text = "Emperor Hub"
 	Title.TextColor3 = Color3.fromRGB(255,255,255)
 	Title.TextSize = 31.000
