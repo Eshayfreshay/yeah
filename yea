@@ -185,7 +185,7 @@ function LibMain:AddWindow()
 	Title.Font = Enum.Font.SciFi
 	Title.Text = "Emperor Hub"
 	Title.TextColor3 = Color3.fromRGB(139,0,0)
-	Title.TextSize = 27.000
+	Title.TextSize = 23.000
 	Title.TextXAlignment = Enum.TextXAlignment.Left
 
 spawn(function()
@@ -452,7 +452,7 @@ end)
 				ToggleFrame.Name = "ToggleFrame"
 				ToggleFrame.Parent = Toggle
 				ToggleFrame.AnchorPoint = Vector2.new(0.5, 0.5)
-				ToggleFrame.BackgroundColor3 = Color3.fromRGB(25,25,29)
+				ToggleFrame.BackgroundColor3 = Color3.fromRGB(235, 234, 235)
 				ToggleFrame.Position = UDim2.new(0.898024716, 0, 0.461538464, 0)
 				ToggleFrame.Size = UDim2.new(0, 33, 0, 19)
 
@@ -463,7 +463,7 @@ end)
 				ToggleFrameWhite.Name = "ToggleFrameWhite"
 				ToggleFrameWhite.Parent = ToggleFrame
 				ToggleFrameWhite.AnchorPoint = Vector2.new(0.5, 0.5)
-				ToggleFrameWhite.BackgroundColor3 = Color3.fromRGB(25,25,29)
+				ToggleFrameWhite.BackgroundColor3 = Color3.fromRGB(255, 254, 255)
 				ToggleFrameWhite.LayoutOrder = 2
 				ToggleFrameWhite.Position = UDim2.new(0.514999986, 0, 0.609000027, -2)
 				ToggleFrameWhite.Size = UDim2.new(0, 30, 0, 16)
@@ -500,21 +500,16 @@ end)
 
 spawn(function()
 	while wait() do
-ToggleCircle.BackgroundColor3 = Color3.fromRGB(255,0,0)
+ToggleCircle.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
 	end
 end)
 
 spawn(function()
 	while wait() do
-ToggleCircle1.BackgroundColor3 = Color3.fromRGB(255,0,0)
+ToggleCircle1.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
 	end
 end)
 
-Toggle.MouseButton1Click:Connect(
-	function()
-		if Toggled == false then
-			
-						
 				Toggle.MouseButton1Click:Connect(
 					function()
 						if Toggled == false then
@@ -536,12 +531,12 @@ Toggle.MouseButton1Click:Connect(
 							TweenService:Create(
 								ToggleFrameWhite,
 								TweenInfo.new(.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-								{BackgroundColor3 = Color3.fromRGB(25,25,29)}
+								{BackgroundColor3 = Color3.fromRGB(229, 227, 255)}
 							):Play()
 							TweenService:Create(
 								ToggleFrame,
 								TweenInfo.new(.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-								{BackgroundColor3 = Color3.fromRGB(25,25,29)}
+								{BackgroundColor3 = Color3.fromRGB(229, 227, 255)}
 							):Play()
 							ToggleCircle:TweenPosition(
 								UDim2.new(0.688, 0, 0.609000027, -2),
@@ -576,12 +571,12 @@ Toggle.MouseButton1Click:Connect(
 							TweenService:Create(
 								ToggleFrameWhite,
 								TweenInfo.new(.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-								{BackgroundColor3 = Color3.fromRGB(25,25,29)}
+								{BackgroundColor3 = Color3.fromRGB(255, 254, 255)}
 							):Play()
 							TweenService:Create(
 								ToggleFrame,
 								TweenInfo.new(.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-								{BackgroundColor3 = Color3.fromRGB(25,25,29)}
+								{BackgroundColor3 = Color3.fromRGB(235, 234, 235)}
 							):Play()
 							ToggleCircle:TweenPosition(
 								UDim2.new(0.197999999, 0, 0.609000027, -2),
@@ -640,7 +635,7 @@ Toggle.MouseButton1Click:Connect(
 
 				SlideFrame.Name = "SlideFrame"
 				SlideFrame.Parent = Slider
-				SlideFrame.BackgroundColor3 = Color3.fromRGB(25,25,29)
+				SlideFrame.BackgroundColor3 = Color3.fromRGB(235, 234, 235)
 				SlideFrame.BorderSizePixel = 0
 				SlideFrame.Position = UDim2.new(0.0439362712, 0, 0.646098614, 0)
 				SlideFrame.Size = UDim2.new(0, 182, 0, 3)
@@ -675,7 +670,7 @@ Toggle.MouseButton1Click:Connect(
 
 spawn(function()
 	while wait() do
-SlideCircle.ImageColor3 = Color3.fromRGB(255,0,0)
+SlideCircle.ImageColor3 = Color3.fromRGB(103, 103, 103)
 CurrentValueFrame.BackgroundColor3 = Color3.fromHSV(tick() % 4 / 4, 0.5, 1)
 	end
 end)
@@ -949,12 +944,11 @@ end)
 			end
 
 			function SectionContent:AddLabel(text)
-				local labelfunc = {}
 				local Label = Instance.new("TextButton")
 
 				Label.Name = "Button"
 				Label.Parent = SectionItemHolder
-				Label.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+				Label.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
 				Label.BorderSizePixel = 0
 				Label.Size = UDim2.new(0, 198, 0, 26)
 				Label.AutoButtonColor = false
@@ -964,10 +958,6 @@ end)
 				Label.ClipsDescendants = true
 				Label.Text = text
 				SectionItemHolder.CanvasSize = UDim2.new(0, 0, 0, SectionHolderList.AbsoluteContentSize.Y)
-                                        function labelfunc:Change(tochange)
-                                        Label.Text = tochange
-                                        end
-                                        return labelfunc
 			end
 			
 			function SectionContent:AddColorpicker(text, preset, callback)
