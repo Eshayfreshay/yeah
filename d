@@ -1161,4 +1161,7 @@ function Library:Window(GameName, ToggleKey)
     end
     return Tabs
 end
+return Library
+end
+
 
