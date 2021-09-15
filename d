@@ -120,7 +120,7 @@ function Library:Window(GameName, ToggleKey)
 
     MakeDraggable(Header, FatherFrameOutline)
 
-    WareText.Name = "GameText"
+    WareText.Name = "WareText"
     WareText.Parent = Header
     WareText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     WareText.BackgroundTransparency = 1.000
@@ -135,14 +135,14 @@ function Library:Window(GameName, ToggleKey)
     WareText.TextSize = 14.000
     WareText.TextXAlignment = Enum.TextXAlignment.Left
     
-    GameText.Name = "WareText"
+    GameText.Name = "GameText"
     GameText.Parent = Header
     GameText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     GameText.BackgroundTransparency = 1.000
     GameText.BorderColor3 = Color3.fromRGB(27, 42, 53)
     GameText.BorderSizePixel = 0
     GameText.Position = UDim2.new(0, 64, 0, 0)
-    GameText.Size = UDim2.new(0, 90, 0, 23)
+    GameText.Size = UDim2.new(0, 100, 0, 23)
     GameText.ZIndex = 2
     GameText.Font = Enum.Font.Code
     GameText.Text = "-".. GameName
