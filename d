@@ -129,7 +129,7 @@ function Library:Window(GameName, ToggleKey)
     WareText.Size = UDim2.new(0, 90, 0, 23)
     WareText.ZIndex = 2
     WareText.Font = Enum.Font.Code
-    WareText.Text = "ware"
+    WareText.Text = "ware -" .. GameName
     WareText.TextColor3 = Color3.fromRGB(255, 55, 55)
     WareText.TextSize = 14.000
     WareText.TextXAlignment = Enum.TextXAlignment.Left
