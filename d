@@ -72,6 +72,7 @@ function Library:Window(GameName, ToggleKey)
     local TabHolder = Instance.new("Frame")
     local Header = Instance.new("TextLabel")
     local WareText = Instance.new("TextLabel")
+    local GameText = Instance.new("TextLabel")
     local TopLine = Instance.new("Frame")
     local ContainerHolder = Instance.new("Frame")
 
@@ -119,20 +120,35 @@ function Library:Window(GameName, ToggleKey)
 
     MakeDraggable(Header, FatherFrameOutline)
 
-    WareText.Name = "WareText"
+    WareText.Name = "GameText"
     WareText.Parent = Header
     WareText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     WareText.BackgroundTransparency = 1.000
     WareText.BorderColor3 = Color3.fromRGB(27, 42, 53)
     WareText.BorderSizePixel = 0
-    WareText.Position = UDim2.new(0, 64, 0, 0)
+    WareText.Position = UDim2.new(0, 70, 0, 0)
     WareText.Size = UDim2.new(0, 90, 0, 23)
     WareText.ZIndex = 2
     WareText.Font = Enum.Font.Code
-    WareText.Text = "ware -".. GameName
+    WareText.Text = "ware"
     WareText.TextColor3 = Color3.fromRGB(255, 55, 55)
     WareText.TextSize = 14.000
     WareText.TextXAlignment = Enum.TextXAlignment.Left
+    
+    GameText.Name = "WareText"
+    GameText.Parent = Header
+    GameText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    GameText.BackgroundTransparency = 1.000
+    GameText.BorderColor3 = Color3.fromRGB(27, 42, 53)
+    GameText.BorderSizePixel = 0
+    GameText.Position = UDim2.new(0, 64, 0, 0)
+    GameText.Size = UDim2.new(0, 90, 0, 23)
+    GameText.ZIndex = 2
+    GameText.Font = Enum.Font.Code
+    GameText.Text = "ware"
+    GameText.TextColor3 = Color3.fromRGB(255, 55, 55)
+    GameText.TextSize = 14.000
+    GameText.TextXAlignment = Enum.TextXAlignment.Left
 
     TopLine.Name = "TopLine"
     TopLine.Parent = Header
@@ -150,7 +166,7 @@ function Library:Window(GameName, ToggleKey)
 	ContainerHolder.BorderSizePixel = 0
 	ContainerHolder.Position = UDim2.new(0, 0, 0.0936139524, 0)
 	ContainerHolder.Size = UDim2.new(0, 430, 0, 453)
-	ContainerHolder.ZIndex = 5
+    ContainerHolder.ZIndex = 5
 
     function Tabs:Tab(TabName)
         TabName = TabName or "Tab"
