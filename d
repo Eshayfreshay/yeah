@@ -126,8 +126,8 @@ function Library:Window(GameName, ToggleKey)
     WareText.BackgroundTransparency = 1.000
     WareText.BorderColor3 = Color3.fromRGB(27, 42, 53)
     WareText.BorderSizePixel = 0
-    WareText.Position = UDim2.new(0, 70, 0, 0)
-    WareText.Size = UDim2.new(0, 64, 0, 23)
+    WareText.Position = UDim2.new(0, 64, 0, 0)
+    WareText.Size = UDim2.new(0, 90, 0, 23)
     WareText.ZIndex = 2
     WareText.Font = Enum.Font.Code
     WareText.Text = "ware"
