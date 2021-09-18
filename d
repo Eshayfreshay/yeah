@@ -62,7 +62,7 @@ end
 
 function Library:Window(GameName, ToggleKey)
     GameName = GameName or "Unknown"
-    ToggleKey = ToggleKey or Enum.KeyCode.RightAlt
+    ToggleKey = ToggleKey or Enum.KeyCode.LeftAlt
 
     -- Instances
 
@@ -141,11 +141,11 @@ function Library:Window(GameName, ToggleKey)
     GameText.BackgroundTransparency = 1.000
     GameText.BorderColor3 = Color3.fromRGB(27, 42, 53)
     GameText.BorderSizePixel = 0
-    GameText.Position = UDim2.new(0, 92, 0, 0)
+    GameText.Position = UDim2.new(0, 140, 0, 0)
     GameText.Size = UDim2.new(0, 90, 0, 23)
     GameText.ZIndex = 2
     GameText.Font = Enum.Font.Code
-    GameText.Text = "|".. GameName
+    GameText.Text = "".. GameName
     GameText.TextColor3 = Color3.fromRGB(255, 255, 255)
     GameText.TextSize = 14.000
     GameText.TextXAlignment = Enum.TextXAlignment.Left
@@ -1065,7 +1065,6 @@ function Library:Window(GameName, ToggleKey)
                             Def = true
                         end
                     end)
-
 
                     LTB_BindText.MouseButton1Click:Connect(function()
                         changeCon = true
