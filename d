@@ -141,7 +141,7 @@ function Library:Window(GameName, ToggleKey)
     GameText.BackgroundTransparency = 1.000
     GameText.BorderColor3 = Color3.fromRGB(27, 42, 53)
     GameText.BorderSizePixel = 0
-    GameText.Position = UDim2.new(0, 330, 0, 0)
+    GameText.Position = UDim2.new(0, 326, 0, 0)
     GameText.Size = UDim2.new(0, 90, 0, 23)
     GameText.ZIndex = 2
     GameText.Font = Enum.Font.Code
