@@ -90,6 +90,16 @@ function Library:Window(GameName, ToggleKey)
     FatherFrameOutline.Size = UDim2.new(0, 434, 0, 504)
     FatherFrameOutline.ZIndex = -3
 
+    UserInputService.InputBegan:Connect(function(input)
+        if input.KeyCode == ToggleKey then
+            if FatherFrameOutline.Visible == false then
+                FatherFrameOutline.Visible = true
+            else
+                FatherFrameOutline.Visible = false
+            end
+        end
+    end)
+
     FatherFrame.Name = "FatherFrame"
     FatherFrame.Parent = FatherFrameOutline
     FatherFrame.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
