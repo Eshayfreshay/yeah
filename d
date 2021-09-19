@@ -751,6 +751,7 @@ function Library:Window(GameName, ToggleKey)
                     LLabel_Title_2.Position = UDim2.new(0, 8, 0, 3)
                     LLabel_Title_2.Size = UDim2.new(0, 190, 0, 15)
                     LLabel_Title_2.Font = Enum.Font.Code
+                    LLabel_Title_2.Text = LblName
                     LLabel_Title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
                     LLabel_Title_2.TextSize = 14.000
                     LLabel_Title_2.TextStrokeTransparency = 0.000
